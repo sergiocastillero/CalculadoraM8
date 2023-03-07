@@ -18,12 +18,12 @@ $	sudo nano /etc/apache2/sites-available/NOMBRE_ARCHIVO.conf
         CustomLog ${APACHE_LOG_DIR}/access.log combined
         WSGIDaemonProcess flaskServer user=user1 group=group1 threads=5
         WSGIScriptAlias / /var/www/m8/python/flaskServer/flaskServer.wsgi
-         <Directory /var/www/m8/python/flaskServer>
+        <Directory /var/www/m8/python/flaskServer>
              WSGIProcessGroup flaskServer
              WSGIApplicationGroup %{GLOBAL}
              Order deny,allow
              Allow from all
-         </Directory>
+        </Directory>
 </VirtualHost>
 
 
