@@ -46,3 +46,15 @@ sys.path.insert(0, '/var/www/m8/python/flaskServer')
 
 from calc import app as application
 
+
+Mediante la herramienta apiary.io se ha creado y diseñado la api utilizarlo en la aplicación de la calculdaora y las rutas para utilizar las operaciones de una calculadora son las siguientes:
+
+Suma: m8/localhost/suma/numero1/numero2
+
+Resta: m8/localhost/resta/numero1/numero2
+
+Multiplicación: m8/localhost/multiplicacio/numero1/numero2
+
+División: m8/localhost/divisio/numero1/numero2
+
+
