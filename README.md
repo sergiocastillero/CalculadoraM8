@@ -10,6 +10,7 @@ $	sudo nano /etc/apache2/sites-available/NOMBRE_ARCHIVO.conf
 /etc/apache2/sites-available/m8MSGI.localhost.conf
 
 <VirtualHost *:80>
+
         ServerName m8.localhost
         ServerAdmin cf17sergio.castillero@iesjoandaustria.org
         DocumentRoot /var/www/m8
