@@ -15,7 +15,6 @@ $	sudo nano /etc/apache2/sites-available/NOMBRE_ARCHIVO.conf
         DocumentRoot /var/www/m8
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
-
         WSGIDaemonProcess flaskServer user=user1 group=group1 threads=5
         WSGIScriptAlias / /var/www/m8/python/flaskServer/flaskServer.wsgi
          <Directory /var/www/m8/python/flaskServer>
