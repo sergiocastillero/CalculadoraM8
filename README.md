@@ -24,6 +24,7 @@ $	sudo nano /etc/apache2/sites-available/NOMBRE_ARCHIVO.conf
              Order deny,allow
              Allow from all
         </Directory>
+        
 </VirtualHost>
 
 
