@@ -1,23 +1,19 @@
-let calc = document.getElementById("calc").value;
-let num1 = document.getElementById("num1").value;
-let num2 = document.getElementById("num2").value;
 let result = document.getElementById("result");
 let submit = document.getElementById("submit");
 
 submit.addEventListener('click', function(){
-    calculo(calc, num1, num2);
+    calculo();
 });
-function calculo(calc, num1, num2) {
+
+function calculo() {
+    let calc = document.getElementById("calc").value;
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+
     fetch(`http://m8.localhost/${calc}/${num1}/${num2}`)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {
+        result.innerText = `Resultado de ${calc} ${num1} y ${num2} es: ${data.resultat}`;
+    })
     .catch(error => console.error(error));
-    /*.then(response => {
-            if (response.ok) {
-                
-            } else {
-                console.error(`Error al eliminar hacer la ${calc}: ${response.statusText}`);
-            }
-        })
-        .catch(error => console.error(error));*/
 }
